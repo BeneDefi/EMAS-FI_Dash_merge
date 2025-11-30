@@ -1,0 +1,155 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+}
+
+:root {
+    --readdy-link-montserrat-body-font-family: "Montserrat", Helvetica;
+    --readdy-link-montserrat-body-font-size: 16px;
+    --readdy-link-montserrat-body-font-style: normal;
+    --readdy-link-montserrat-body-font-weight: 400;
+    --readdy-link-montserrat-body-letter-spacing: 0px;
+    --readdy-link-montserrat-body-line-height: 26px;
+    --readdy-link-montserrat-regular-font-family: "Montserrat", Helvetica;
+    --readdy-link-montserrat-regular-font-size: 14px;
+    --readdy-link-montserrat-regular-font-style: normal;
+    --readdy-link-montserrat-regular-font-weight: 400;
+    --readdy-link-montserrat-regular-letter-spacing: 0px;
+    --readdy-link-montserrat-regular-line-height: 20px;
+    --readdy-link-semantic-button-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-button-font-size: 16px;
+    --readdy-link-semantic-button-font-style: normal;
+    --readdy-link-semantic-button-font-weight: 600;
+    --readdy-link-semantic-button-letter-spacing: 0px;
+    --readdy-link-semantic-button-line-height: 24px;
+    --readdy-link-semantic-heading-2-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-heading-2-font-size: 36px;
+    --readdy-link-semantic-heading-2-font-style: normal;
+    --readdy-link-semantic-heading-2-font-weight: 700;
+    --readdy-link-semantic-heading-2-letter-spacing: 0px;
+    --readdy-link-semantic-heading-2-line-height: 40px;
+    --readdy-link-semantic-heading-3-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-heading-3-font-size: 20px;
+    --readdy-link-semantic-heading-3-font-style: normal;
+    --readdy-link-semantic-heading-3-font-weight: 600;
+    --readdy-link-semantic-heading-3-letter-spacing: 0px;
+    --readdy-link-semantic-heading-3-line-height: 28px;
+    --readdy-link-semantic-heading-4-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-heading-4-font-size: 18px;
+    --readdy-link-semantic-heading-4-font-style: normal;
+    --readdy-link-semantic-heading-4-font-weight: 600;
+    --readdy-link-semantic-heading-4-letter-spacing: 0px;
+    --readdy-link-semantic-heading-4-line-height: 28px;
+    --readdy-link-semantic-input-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-input-font-size: 16px;
+    --readdy-link-semantic-input-font-style: normal;
+    --readdy-link-semantic-input-font-weight: 400;
+    --readdy-link-semantic-input-letter-spacing: 0px;
+    --readdy-link-semantic-input-line-height: normal;
+    --readdy-link-semantic-item-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-item-font-size: 16px;
+    --readdy-link-semantic-item-font-style: normal;
+    --readdy-link-semantic-item-font-weight: 400;
+    --readdy-link-semantic-item-letter-spacing: 0px;
+    --readdy-link-semantic-item-line-height: 24px;
+    --readdy-link-semantic-link-font-family: "Montserrat", Helvetica;
+    --readdy-link-semantic-link-font-size: 14px;
+    --readdy-link-semantic-link-font-style: normal;
+    --readdy-link-semantic-link-font-weight: 500;
+    --readdy-link-semantic-link-letter-spacing: 0px;
+    --readdy-link-semantic-link-line-height: 20px;
+    --readdylinkblack: rgba(0, 0, 0, 1);
+    --readdylinkblack-70: rgba(0, 0, 0, 0.7);
+    --readdylinkgray-chateau: rgba(156, 163, 175, 1);
+    --readdylinkmischka: rgba(209, 213, 219, 1);
+    --readdylinkold-gold: rgba(212, 175, 55, 1);
+    --readdylinkpale-sky: rgba(107, 114, 128, 1);
+    --readdylinkwhite-cod-gray: rgba(255, 255, 255, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 47.4% 11.2%;
+
+        --muted: 210 40% 96.1%;
+        --muted-foreground: 215.4 16.3% 46.9%;
+
+        --popover: 0 0% 100%;
+        --popover-foreground: 222.2 47.4% 11.2%;
+
+        --border: 214.3 31.8% 91.4%;
+        --input: 214.3 31.8% 91.4%;
+
+        --card: transparent;
+        --card-foreground: 222.2 47.4% 11.2%;
+
+        --primary: 222.2 47.4% 11.2%;
+        --primary-foreground: 210 40% 98%;
+
+        --secondary: 210 40% 96.1%;
+        --secondary-foreground: 222.2 47.4% 11.2%;
+
+        --accent: 210 40% 96.1%;
+        --accent-foreground: 222.2 47.4% 11.2%;
+
+        --destructive: 0 100% 50%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 215 20.2% 65.1%;
+
+        --radius: 0.5rem;
+    }
+
+    .dark {
+        --background: 224 71% 4%;
+        --foreground: 213 31% 91%;
+
+        --muted: 223 47% 11%;
+        --muted-foreground: 215.4 16.3% 56.9%;
+
+        --accent: 216 34% 17%;
+        --accent-foreground: 210 40% 98%;
+
+        --popover: 224 71% 4%;
+        --popover-foreground: 215 20.2% 65.1%;
+
+        --border: 216 34% 17%;
+        --input: 216 34% 17%;
+
+        --card: transparent;
+        --card-foreground: 213 31% 91%;
+
+        --primary: 210 40% 98%;
+        --primary-foreground: 222.2 47.4% 1.2%;
+
+        --secondary: 222.2 47.4% 11.2%;
+        --secondary-foreground: 210 40% 98%;
+
+        --destructive: 0 63% 31%;
+        --destructive-foreground: 210 40% 98%;
+
+        --ring: 216 34% 17%;
+
+        --radius: 0.5rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
